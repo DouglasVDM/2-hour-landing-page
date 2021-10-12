@@ -10,36 +10,58 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <!--Top Nav-->
+  <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
   <!-- Banner section -->
   <div class="banner">
     <h1>Douglas Van Der Merwe</h1>
     <h3>Full Stack Web Developer</h3>
-    <a class="button-blue" href="https://www.lewagon.com">Project</a>
+    <a class="button-blue" href="https://www.linkedin.com/in/douglas-van-der-merwe-b4552467/" target="blank">Linkedin</a>
   </div>
+
   <!-- Cards section -->
   <div class="container">
-    <h2>Projects</h2>
+    <h2>Featured Projects</h2>
     <div class="cards">
       <div class="card-white">
-        <img src="./images/shanghai.jpg" alt="shanghai">
-        <h3>React - Hotel Project</h3>
-        <p>Blah blah blah</p>
-      </div>        
-      <div class="card-white">
-        <img src="./images/paris.jpg" alt="paris">
-        <h3>React - Hotel Project</h3>
-        <p>Blah blah blah</p>
-      </div>        
-      <div class="card-white">
-        <img src="./images/london.jpg" alt="london">
-        <h3>React - Hotel Project</h3>
-        <p>Blah blah blah</p>
+        <a href="https://aec-project.herokuapp.com/" target="blank">
+          <img src="./public/images/aec - landing page.png" alt="Advancing Engaged Citizenship home page">
+        </a>
+        <a href="https://aec-project.herokuapp.com/" target="blank">
+          <h4>
+            Advancing Engaged Citizenship
+          </h4>
+        </a>
+        <a href="https://aec-project.herokuapp.com/" target="blank">          
+          <p>
+            A platform where students can journey with a team of mentors to assist with the innovation of project ideas, during the conceptualization and implementation phase. It allows students to complete a standard template with prompts to answer key questions. It also allows university staff to provide feedback and mentorship via the platform.
+          </p>
+        </a>
       </div>
     </div>      
   </div>
+  
   <!-- Footer section -->
   <div class="footer">
-    <p>Website made with at Douglas Websites</p>
+    <p>Website made with love at DTA Media</p>
   </div>
+  <script src="./topNav.js"></script>
 </body>
 </html>
